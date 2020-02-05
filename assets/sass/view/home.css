@@ -1,0 +1,104 @@
+nav {
+  height: 9vh;
+  background: rgba(36, 39, 46, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .navbar__links {
+  width: 80vw;
+  margin: 0;
+  position: absolute;
+  top: 9vh;
+  left: 0;
+  background-color: rgba(36, 39, 46, 0.8);
+  height: 90vh;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+nav .navbar__links.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+nav .navbar__link a {
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  position: relative;
+}
+
+nav .navbar__link a.active::after {
+  content: "";
+  position: absolute;
+  top: 1.8rem;
+  left: 0;
+  width: 100%;
+  height: .2rem;
+  background-color: #FF1D6A;
+}
+
+nav .navbar__button {
+  height: 75%;
+  width: 3rem;
+  position: relative;
+  cursor: pointer;
+}
+
+nav .navbar__button span {
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  display: block;
+  height: .15rem;
+  background-color: #FFFFFF;
+  width: 80%;
+  border-radius: 4px;
+  display: block;
+}
+
+nav .navbar__button span:first-of-type {
+  top: 30%;
+}
+
+nav .navbar__button span:nth-of-type(2) {
+  top: 50%;
+}
+
+nav .navbar__button span:last-of-type {
+  top: 70%;
+}
+
+header {
+  height: 100vh;
+  background: url(../../img/header.jpg) 30% 50%/cover;
+  position: relative;
+}
+/*# sourceMappingURL=home.css.map */
