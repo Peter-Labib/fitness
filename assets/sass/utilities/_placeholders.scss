@@ -1,0 +1,28 @@
+%after {
+    content: "";
+    position: absolute;
+    left: .1rem;
+    bottom: -1rem;
+    background-color: $secondry-color;
+    height: .1rem;
+    width: 8rem;
+    border-radius: 9px;
+}
+
+%after-center{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -1rem;
+    background-color: $secondry-color;
+    height: .1rem;
+    width: 8rem;
+    border-radius: 9px;
+}
+
+%paragraph {
+    font-size: 1.3rem;
+    color: #8c8c8c;
+    margin: 2rem 0;
+}
