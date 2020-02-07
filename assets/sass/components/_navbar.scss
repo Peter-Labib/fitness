@@ -1,13 +1,13 @@
 nav {
     height: 9vh;
-    background: rgba(#24272E, .8);
+    background: rgba($main-color, .8);
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     .navbar__links {
         width: 80vw;
-        margin: 0;
+        // margin: 0;
         position: absolute;
         top: 9vh;
         left: 0;

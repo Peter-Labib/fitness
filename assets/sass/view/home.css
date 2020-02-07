@@ -1,6 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+.price-plans h2::after, .about-us h2::after {
+  content: "";
+  position: absolute;
+  left: .1rem;
+  bottom: -1rem;
+  background-color: #FF1D6A;
+  height: .1rem;
+  width: 8rem;
+  border-radius: 9px;
+}
+
+.our-classes .our-classes__heading::after, .our-classes .our-classes__grid-container .our-classes__grid-item > h3::after, .our-classes .our-classes__grid-container .our-classes__grid-item .our-classes__grid-item__highlighted-box h2::after, .our-trainer .our-trainer__title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: -1rem;
+  background-color: #FF1D6A;
+  height: .1rem;
+  width: 8rem;
+  border-radius: 9px;
+}
+
+.about-us h2 + p, .our-classes .our-classes__paragraph, .our-trainer .our-trainer__paragraph {
+  font-size: 1.3rem;
+  color: #8c8c8c;
+  margin: 2rem 0;
+}
+
 nav {
   height: 9vh;
-  background: rgba(36, 39, 46, 0.8);
+  background: rgba(24, 26, 31, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +45,6 @@ nav {
 
 nav .navbar__links {
   width: 80vw;
-  margin: 0;
   position: absolute;
   top: 9vh;
   left: 0;
@@ -96,9 +126,169 @@ nav .navbar__button span:last-of-type {
   top: 70%;
 }
 
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #181A1F;
+}
+
 header {
   height: 100vh;
   background: url(../../img/header.jpg) 30% 50%/cover;
+  opacity: .8;
+  position: relative;
+}
+
+.price-plans {
+  padding: 2rem 0;
+  background-color: #181A1F;
+}
+
+.price-plans h2 {
+  color: #FFFFFF;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-transform: capitalize;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.price-plans .container-md {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-plans .price-plans__card {
+  cursor: pointer;
+}
+
+.price-plans .price-plans__card img {
+  background-size: cover;
+  width: 100%;
+}
+
+.about-us {
+  margin: 4rem 0;
+}
+
+.about-us span {
+  color: #FF6C2C;
+}
+
+.about-us h2 {
+  color: #fff;
+  position: relative;
+  margin: .7rem 0;
+}
+
+.about-us h2 + p {
+  color: #FF6C2C;
+}
+
+.about-us p {
+  color: #DCDCDC;
+  font-size: 1.3rem;
+}
+
+.our-classes {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.our-classes .our-classes__heading {
+  color: #fff;
+  position: relative;
+}
+
+.our-classes .our-classes__grid-container {
+  padding: 0 .7rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 500px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.our-classes .our-classes__grid-container .our-classes__grid-item {
+  position: relative;
+}
+
+.our-classes .our-classes__grid-container .our-classes__grid-item > img {
+  width: 100%;
+  opacity: .8;
+}
+
+.our-classes .our-classes__grid-container .our-classes__grid-item > h3 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(19, 25, 26, 0.58);
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 0;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+}
+
+.our-classes .our-classes__grid-container .our-classes__grid-item > h3::after {
+  bottom: 1rem;
+  background-color: #FF6C2C;
+}
+
+.our-classes .our-classes__grid-container .our-classes__grid-item .our-classes__grid-item__highlighted-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #FF1D6A;
+  width: 80%;
+  height: 75%;
+  color: #F6F7FB;
+  opacity: .85;
+}
+
+.our-classes .our-classes__grid-container .our-classes__grid-item .our-classes__grid-item__highlighted-box h2 {
+  margin: 2% .3% 3%;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.our-classes .our-classes__grid-container .our-classes__grid-item .our-classes__grid-item__highlighted-box h2::after {
+  background-color: #F6F7FB;
+}
+
+.our-classes .our-classes__grid-container .our-classes__grid-item .our-classes__grid-item__highlighted-box p {
+  padding: 1rem 1rem;
+}
+
+.our-classes .our-classes__grid-container .our-classes__grid-item .our-classes__grid-item__highlighted-box button {
+  color: #FF6C2C;
+  background-color: #F6F7FB;
+  width: 40%;
+}
+
+.our-trainer {
+  background-color: #24272E;
+  padding: 3rem 0;
+}
+
+.our-trainer .our-trainer__title,
+.our-trainer .our-trainer__paragraph {
+  text-align: center;
+}
+
+.our-trainer .our-trainer__title {
+  color: #fff;
   position: relative;
 }
 /*# sourceMappingURL=home.css.map */
