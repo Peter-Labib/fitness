@@ -1,3 +1,37 @@
+<<<<<<< Updated upstream
+=======
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+.price-plans h2::after, .about-us h2::after, .our-trainer .our-trainer__info .our-trainer__info__job::after {
+  content: "";
+  position: absolute;
+  left: .1rem;
+  bottom: -1rem;
+  background-color: #FF1D6A;
+  height: .1rem;
+  width: 8rem;
+  border-radius: 9px;
+}
+
+.our-classes .our-classes__heading::after, .our-classes .our-classes__grid-container .our-classes__grid-item > h3::after, .our-classes .our-classes__grid-container .our-classes__grid-item .our-classes__grid-item__highlighted-box h2::after, .our-trainer .our-trainer__title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: -1rem;
+  background-color: #FF1D6A;
+  height: .1rem;
+  width: 8rem;
+  border-radius: 9px;
+}
+
+.about-us h2 + p, .our-classes .our-classes__paragraph, .our-trainer .our-trainer__paragraph {
+  font-size: 1.3rem;
+  color: #8c8c8c;
+  margin: 2rem 0;
+}
+
+>>>>>>> Stashed changes
 nav {
   height: 9vh;
   background: rgba(36, 39, 46, 0.8);
@@ -96,9 +130,63 @@ nav .navbar__button span:last-of-type {
   top: 70%;
 }
 
+<<<<<<< Updated upstream
+=======
+.owl-carousel.our-trainer__pic .owl-stage .owl-item {
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.owl-carousel.our-trainer__pic .owl-stage .owl-item.center {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  z-index: 5;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #181A1F;
+}
+
+>>>>>>> Stashed changes
 header {
   height: 100vh;
   background: url(../../img/header.jpg) 30% 50%/cover;
   position: relative;
+}
+
+.our-trainer .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.our-trainer .our-trainer__info {
+  color: #BBBBBB;
+  margin: 3rem 0;
+}
+
+.our-trainer .our-trainer__info .our-trainer__info__name {
+  color: #fff;
+}
+
+.our-trainer .our-trainer__info .our-trainer__info__job {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.our-trainer .our-trainer__info .our-trainer__info__job::after {
+  width: 4rem;
+}
+
+.our-trainer .our-trainer__info .our-trainer__info__icon {
+  margin-right: .5rem;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+}
+
+.our-trainer .our-trainer__pic img {
+  width: 100%;
 }
 /*# sourceMappingURL=home.css.map */

@@ -2,7 +2,6 @@ class NavBar {
 
 	constructor(){
 		this.navBtn = document.querySelector('.navbar__button');
-
 		this.navBtn.addEventListener('click', this.navHandler.bind(this));
 	}
 

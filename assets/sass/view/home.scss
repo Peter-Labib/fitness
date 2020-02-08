@@ -1,8 +1,235 @@
 @import '../components/navbar';
+<<<<<<< Updated upstream
+=======
+@import '../components/slider';
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: $main-color;
+}
+>>>>>>> Stashed changes
 
 header {
     height: 100vh;
     background: url(../../img/header.jpg) 30% 50%/cover;
     position: relative;
 
+<<<<<<< Updated upstream
+=======
+}
+
+// start price plans
+
+.price-plans {
+    padding: 2rem 0;
+    background-color: $main-color;
+
+
+    h2 {
+        color: #FFFFFF;
+        align-self: flex-start;
+        text-transform: capitalize;
+        position: relative;
+        margin-bottom: 3rem;
+
+        &::after {
+            @extend %after
+        }
+    }
+
+    .container-md {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-plans__card {
+        cursor: pointer;
+
+        img {
+            background-size: cover;
+            width: 100%;
+        }
+    }
+}
+
+// start about us
+.about-us {
+    margin: 4rem 0;
+
+    span {
+        color: $third-color;
+    }
+
+    h2 {
+        color: #fff;
+        position: relative;
+        margin: .7rem 0;
+
+        &::after {
+            @extend %after;
+        }
+    }
+
+    h2+p {
+        @extend %paragraph;
+        color: $third-color;
+
+    }
+
+    p {
+        color: #DCDCDC;
+        font-size: 1.3rem;
+    }
+}
+
+// start our classes
+.our-classes {
+    text-align: center;
+    padding: 4rem 0;
+
+    .our-classes__heading {
+        color: #fff;
+        position: relative;
+
+        &::after {
+            @extend %after-center;
+        }
+    }
+
+    .our-classes__paragraph {
+        @extend %paragraph
+    }
+
+    .our-classes__grid-container {
+        padding: 0 .7rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+        justify-content: center;
+
+
+        .our-classes__grid-item {
+            position: relative;
+
+            &>img {
+                width: 100%;
+                opacity: .8;
+            }
+
+            &>h3 {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-color: rgba($color: #13191A, $alpha: 0.58);
+                width: 100%;
+                padding: 2rem;
+                margin-bottom: 0;
+                color: #FFFFFF;
+                font-size: 1.3rem;
+
+                &::after {
+                    @extend %after-center;
+                    bottom: 1rem;
+                    background-color: $third-color;
+                }
+            }
+
+            .our-classes__grid-item__highlighted-box {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background-color: $secondry-color;
+                width: 80%;
+                height: 75%;
+                color: #F6F7FB;
+                opacity: .85;
+
+                h2 {
+                    margin: 2% .3% 3%;
+                    font-size: 1.8rem;
+                    position: relative;
+
+                    &::after {
+                        @extend %after-center;
+                        background-color: #F6F7FB;
+                    }
+                }
+
+                p {
+                    padding: 1rem 1rem;
+                }
+
+                button {
+                    color: $third-color;
+                    background-color: #F6F7FB;
+                    width: 40%;
+                }
+            }
+        }
+
+    }
+}
+
+// our trainer
+.our-trainer {
+    background-color: #24272E;
+    padding: 3rem 0;
+
+    & .our-trainer__title,
+    & .our-trainer__paragraph {
+        text-align: center;
+    }
+
+    & .our-trainer__title {
+        color: #fff;
+        position: relative;
+
+        &::after {
+            @extend %after-center
+        }
+    }
+
+    & .our-trainer__paragraph {
+        @extend %paragraph
+    }
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .our-trainer__info {
+        color: #BBBBBB;
+        margin: 3rem 0;
+
+        .our-trainer__info__name {
+            color: #fff;
+        }
+
+        .our-trainer__info__job {
+            position: relative;
+            margin-bottom: 3rem;
+
+            &::after {
+                @extend %after;
+                width: 4rem;
+            }
+        }
+
+        .our-trainer__info__icon {
+            margin-right: .5rem;
+            transition: all ease .2s;
+        }
+    }
+
+    .our-trainer__pic {
+        
+        img {
+            width: 100%;
+            // height: 100%;
+        }
+    }
+>>>>>>> Stashed changes
 }
