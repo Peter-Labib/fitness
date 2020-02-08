@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-.price-plans h2::after, .about-us h2::after {
+.price-plans h2::after, .about-us h2::after, .our-trainer .our-trainer__info .our-trainer__info__job::after {
   content: "";
   position: absolute;
   left: .1rem;
@@ -290,5 +290,38 @@ header {
 .our-trainer .our-trainer__title {
   color: #fff;
   position: relative;
+}
+
+.our-trainer .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.our-trainer .our-trainer__info {
+  color: #BBBBBB;
+  margin: 3rem 0;
+}
+
+.our-trainer .our-trainer__info .our-trainer__info__name {
+  color: #fff;
+}
+
+.our-trainer .our-trainer__info .our-trainer__info__job {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.our-trainer .our-trainer__info .our-trainer__info__job::after {
+  width: 4rem;
+}
+
+.our-trainer .our-trainer__info .our-trainer__info__icon {
+  margin-right: .5rem;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+}
+
+.our-trainer .our-trainer__pic img {
+  width: 100%;
 }
 /*# sourceMappingURL=home.css.map */

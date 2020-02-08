@@ -192,4 +192,40 @@ header {
         @extend %paragraph
     }
 
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .our-trainer__info {
+        color: #BBBBBB;
+        margin: 3rem 0;
+
+        .our-trainer__info__name {
+            color: #fff;
+        }
+
+        .our-trainer__info__job {
+            position: relative;
+            margin-bottom: 3rem;
+
+            &::after {
+                @extend %after;
+                width: 4rem;
+            }
+        }
+
+        .our-trainer__info__icon {
+            margin-right: .5rem;
+            transition: all ease .2s;
+        }
+    }
+
+    .our-trainer__pic {
+        
+        img {
+            width: 100%;
+            // height: 100%;
+        }
+    }
 }
