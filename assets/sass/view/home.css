@@ -126,6 +126,40 @@ nav .navbar__button span:last-of-type {
   top: 70%;
 }
 
+.owl-carousel.our-trainer__pic .owl-item {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-box-shadow: #FF6C2C 0 3px 8px -2px;
+          box-shadow: #FF6C2C 0 3px 8px -2px;
+  border: 1px solid rgba(255, 108, 44, 0.3);
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+}
+
+.owl-carousel.our-trainer__pic .owl-item.active.center {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: #FF6C2C -4px -6px 19px -4px;
+          box-shadow: #FF6C2C -4px -6px 19px -4px;
+  border: 1px solid rgba(255, 108, 44, 0.5);
+}
+
+.owl-carousel.our-trainer__pic .owl-nav .owl-prev, .owl-carousel.our-trainer__pic .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  color: #FF1D6A;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.owl-carousel.our-trainer__pic .owl-nav .owl-prev {
+  left: 1.2rem;
+}
+
+.owl-carousel.our-trainer__pic .owl-nav .owl-next {
+  right: 1.2rem;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #181A1F;
@@ -300,6 +334,18 @@ header {
 .our-trainer .our-trainer__info {
   color: #BBBBBB;
   margin: 3rem 0;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.our-trainer .our-trainer__info.d-none {
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+}
+
+.our-trainer .our-trainer__info.d-block {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 .our-trainer .our-trainer__info .our-trainer__info__name {

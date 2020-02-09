@@ -1,6 +1,7 @@
 @import '../utilities/variables';
 @import '../utilities/placeholders';
 @import '../components/navbar';
+@import '../components/slider';
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 body {
@@ -200,6 +201,14 @@ header {
     .our-trainer__info {
         color: #BBBBBB;
         margin: 3rem 0;
+        transition: all ease .5s;
+        &.d-none {
+            transform: translate(-100%);
+        }
+
+        &.d-block{
+            transform: translate(0);
+        }
 
         .our-trainer__info__name {
             color: #fff;

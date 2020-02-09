@@ -1,0 +1,28 @@
+.owl-carousel.our-trainer__pic {
+
+    .owl-item {
+        transform: scale(.7);
+        box-shadow: $third-color 0 3px 8px -2px;
+        border: 1px solid rgba($color: $third-color, $alpha: .3);
+        transition: all ease .4s;
+    }
+
+    .owl-item.active.center {
+        transform: scale(.9);
+        box-shadow: $third-color -4px -6px 19px -4px;
+        border: 1px solid rgba($color: $third-color, $alpha: .5);
+    }
+    .owl-nav .owl-prev, .owl-nav .owl-next{
+        position: absolute;
+        top: 50%;
+        color: $secondry-color;
+        transform: translateY(-50%);
+    } 
+    .owl-nav .owl-prev{
+        left: 1.2rem;
+    }
+
+    .owl-nav .owl-next{
+        right: 1.2rem;
+    }
+}
