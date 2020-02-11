@@ -12,17 +12,66 @@
         box-shadow: $third-color -4px -6px 19px -4px;
         border: 1px solid rgba($color: $third-color, $alpha: .5);
     }
-    .owl-nav .owl-prev, .owl-nav .owl-next{
+
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
         position: absolute;
         top: 50%;
         color: $secondry-color;
         transform: translateY(-50%);
-    } 
-    .owl-nav .owl-prev{
+    }
+
+    .owl-nav .owl-prev {
         left: 1.2rem;
     }
 
-    .owl-nav .owl-next{
+    .owl-nav .owl-next {
         right: 1.2rem;
     }
+}
+
+// tesmonials-carousel
+.owl-carousel.Testmonials__carousel {
+
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
+        position: absolute;
+        top: 0;
+        color: $secondry-color;
+
+    }
+
+    .owl-nav .owl-prev {
+        left: 0;
+    }
+
+    .owl-nav .owl-next {
+        right: 0;
+    }
+
+    .owl-dots .owl-dot {
+        span {
+            transition: all ease .3s;
+            background-color: $third-color;
+        }
+
+        &.active span{
+            background-color: $secondry-color;
+        }
+    }
+}
+
+//animation 
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    animation-name: fadeOut;
 }

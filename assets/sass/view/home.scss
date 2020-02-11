@@ -4,6 +4,10 @@
 @import '../components/slider';
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
+button:focus {
+    outline: none;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     background-color: $main-color;
@@ -18,7 +22,6 @@ header {
 }
 
 // start price plans
-
 .price-plans {
     padding: 2rem 0;
     background-color: $main-color;
@@ -146,23 +149,26 @@ header {
 
                 h2 {
                     margin: 2% .3% 3%;
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
                     position: relative;
 
                     &::after {
                         @extend %after-center;
                         background-color: #F6F7FB;
+                        bottom: -.5rem;
                     }
                 }
 
                 p {
-                    padding: 1rem 1rem;
+                    padding: .5rem .5rem 0;
+                    margin-bottom: .5rem;
                 }
 
                 button {
                     color: $third-color;
                     background-color: #F6F7FB;
                     width: 40%;
+                    font-size: .8rem;
                 }
             }
         }
@@ -193,20 +199,16 @@ header {
         @extend %paragraph
     }
 
-    .row {
-        margin-right: 0;
-        margin-left: 0;
-    }
-
     .our-trainer__info {
         color: #BBBBBB;
         margin: 3rem 0;
         transition: all ease .5s;
+
         &.d-none {
             transform: translate(-100%);
         }
 
-        &.d-block{
+        &.d-block {
             transform: translate(0);
         }
 
@@ -231,10 +233,96 @@ header {
     }
 
     .our-trainer__pic {
-        
+
         img {
             width: 100%;
             // height: 100%;
         }
+    }
+}
+
+// Testmonials
+.Testmonials {
+    color: #F6F7FB;
+    text-align: center;
+    margin: 2rem 0;
+
+    &>h2 {
+        position: relative;
+        margin-bottom: 2rem;
+
+
+        &::after {
+            @extend %after-center
+        }
+    }
+
+    .Testmonials__carousel__item__rate {
+        font-style: italic;
+        color: #CFCFCF;
+    }
+
+    .Testmonials__carousel__item__img-container {
+        border-radius: 50%;
+
+        img {
+            width: auto;
+            margin: 1rem auto;
+            border: 2px solid $third-color;
+        }
+    }
+}
+
+// Recent Blog 
+.Recent-Blog {
+    background-color: #24272E;
+    padding-bottom: 2rem;
+    .Recent-Blog__title {
+        text-align: center;
+        padding-top: 2rem;
+        color: #F6F7FB;
+        position: relative;
+
+        &::after {
+            @extend %after-center
+        }
+    }
+
+    .Recent-Blog__card.card {
+        background-color: #13191A;
+        color: #BBBBBB;
+        margin: .5rem;
+
+        &>img {
+            opacity: .8;
+        }
+
+        .card-title {
+            color: $third-color;
+        }
+
+        span {
+            margin-right: .7rem;
+
+            svg {
+                color: $third-color;
+            }
+        }
+    }
+    .Recent-Blog__article{
+        border-radius: .25rem;
+        padding: 0;
+        padding-bottom: 2rem;
+        background-color: #13191A;
+        .Recent-Blog__article__header-img {width: 100%;}
+        .Recent-Blog__article__writer-photo {
+            border: 2px solid $third-color;
+            margin: 1rem auto;
+            display: block;
+        }
+        .Recent-Blog__article__title {color: $third-color;}
+        p, q, .Recent-Blog__article__title {padding:.5rem .5rem}
+        p,q {color: #BBBBBB;}
+        
     }
 }
