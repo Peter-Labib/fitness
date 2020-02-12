@@ -19,6 +19,37 @@ header {
     opacity: .8;
     position: relative;
 
+    .slogan {
+        padding: .8rem;
+        position: relative;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: #292F39;
+        color: #fff;
+
+        p {
+            color: #BFBFBF;
+
+            span {
+                color: $third-color;
+            }
+        }
+
+        .slogan__videos {
+            button {
+                margin-right: .5rem;
+            }
+
+            a {
+                color: $secondry-color;
+
+                span {
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
 
 // start price plans
@@ -43,14 +74,14 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
 
-    .price-plans__card {
-        cursor: pointer;
+        .price-plans__card {
+            cursor: pointer;
 
-        img {
-            background-size: cover;
-            width: 100%;
+            img {
+                background-size: cover;
+                width: 100%;
+            }
         }
     }
 }
@@ -109,16 +140,15 @@ header {
         grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
         justify-content: center;
 
-
         .our-classes__grid-item {
             position: relative;
 
-            &>img {
+            img {
                 width: 100%;
-                opacity: .8;
+                // opacity: .8;
             }
 
-            &>h3 {
+            h3 {
                 position: absolute;
                 left: 0;
                 bottom: 0;
@@ -181,12 +211,12 @@ header {
     background-color: #24272E;
     padding: 3rem 0;
 
-    & .our-trainer__title,
-    & .our-trainer__paragraph {
+    .our-trainer__title,
+    .our-trainer__paragraph {
         text-align: center;
     }
 
-    & .our-trainer__title {
+    .our-trainer__title {
         color: #fff;
         position: relative;
 
@@ -195,7 +225,7 @@ header {
         }
     }
 
-    & .our-trainer__paragraph {
+    .our-trainer__paragraph {
         @extend %paragraph
     }
 
@@ -203,14 +233,15 @@ header {
         color: #BBBBBB;
         margin: 3rem 0;
         transition: all ease .5s;
+        padding: 0 .6rem;
 
-        &.d-none {
-            transform: translate(-100%);
-        }
+        // &.d-none {
+        //     transform: translate(-100%);
+        // }
 
-        &.d-block {
-            transform: translate(0);
-        }
+        // &.d-block {
+        //     transform: translate(0);
+        // }
 
         .our-trainer__info__name {
             color: #fff;
@@ -229,11 +260,11 @@ header {
         .our-trainer__info__icon {
             margin-right: .5rem;
             transition: all ease .2s;
+            color: $secondry-color;
         }
     }
 
     .our-trainer__pic {
-
         img {
             width: 100%;
             // height: 100%;
@@ -247,7 +278,7 @@ header {
     text-align: center;
     margin: 2rem 0;
 
-    &>h2 {
+    h2 {
         position: relative;
         margin-bottom: 2rem;
 
@@ -257,18 +288,20 @@ header {
         }
     }
 
-    .Testmonials__carousel__item__rate {
-        font-style: italic;
-        color: #CFCFCF;
-    }
+    .Testmonials__carousel__item {
+        .Testmonials__carousel__item__rate {
+            font-style: italic;
+            color: #CFCFCF;
+        }
 
-    .Testmonials__carousel__item__img-container {
-        border-radius: 50%;
+        .Testmonials__carousel__item__img-container {
+            border-radius: 50%;
 
-        img {
-            width: auto;
-            margin: 1rem auto;
-            border: 2px solid $third-color;
+            img {
+                width: auto;
+                margin: 1rem auto;
+                border: 2px solid $third-color;
+            }
         }
     }
 }
@@ -276,7 +309,8 @@ header {
 // Recent Blog 
 .Recent-Blog {
     background-color: #24272E;
-    padding-bottom: 2rem;
+    padding: 0 .5rem 2rem;
+
     .Recent-Blog__title {
         text-align: center;
         padding-top: 2rem;
@@ -288,41 +322,146 @@ header {
         }
     }
 
-    .Recent-Blog__card.card {
-        background-color: #13191A;
-        color: #BBBBBB;
-        margin: .5rem;
+    .Recent-Blog__cards {
+        .Recent-Blog__card {
+            background-color: #13191A;
+            color: #BBBBBB;
+            margin: .5rem 0;
 
-        &>img {
-            opacity: .8;
-        }
+            &>img {
+                opacity: .8;
+            }
 
-        .card-title {
-            color: $third-color;
-        }
-
-        span {
-            margin-right: .7rem;
-
-            svg {
+            .card-title {
                 color: $third-color;
+            }
+
+            span {
+                margin-right: .7rem;
+
+                svg {
+                    color: $third-color;
+                }
             }
         }
     }
-    .Recent-Blog__article{
+
+
+    .Recent-Blog__article {
         border-radius: .25rem;
         padding: 0;
         padding-bottom: 2rem;
         background-color: #13191A;
-        .Recent-Blog__article__header-img {width: 100%;}
+
+        .Recent-Blog__article__header-img {
+            width: 100%;
+        }
+
         .Recent-Blog__article__writer-photo {
             border: 2px solid $third-color;
             margin: 1rem auto;
             display: block;
         }
-        .Recent-Blog__article__title {color: $third-color;}
-        p, q, .Recent-Blog__article__title {padding:.5rem .5rem}
-        p,q {color: #BBBBBB;}
-        
+
+        .Recent-Blog__article__title {
+            color: $third-color;
+        }
+
+        .Recent-Blog__article__title,
+        p,
+        q {
+            padding: .5rem .5rem
+        }
+
+        p,
+        q {
+            color: #BBBBBB;
+        }
+
+    }
+}
+
+// contact-us
+.contact-us {
+    padding: 0 1rem;
+    text-align: center;
+    color: #fff;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(black, .8)80%, rgba(black, .6)), url("../../img/contact-us.jpg") center/cover;
+
+    .contact-us__title {
+        padding: 2rem 0;
+        position: relative;
+
+        &::after {
+            @extend %after-center;
+            background-color: $third-color;
+            bottom: 1rem;
+        }
+    }
+
+    form {
+        .form-control {
+            margin-top: .8rem;
+            border: 1px solid $third-color;
+        }
+
+        input,
+        select,
+        textarea {
+            background: transparent;
+
+        }
+    }
+
+    button {
+        margin: .8rem 0;
+    }
+
+    p {
+        margin-bottom: 1rem;
+
+        span {
+            padding: 0 .5rem
+        }
+    }
+
+    .contact-us__icons a {
+        color: $secondry-color;
+
+        &:nth-last-of-type(2) {
+            margin: 0 .5rem;
+        }
+    }
+}
+
+// quick-contacts
+.quick-contacts {
+    background-color: $main-color;
+    color: #FFF;
+
+    .quick-contacts__info {
+        white-space: pre-line;
+
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+
+            li a{
+                margin-right: .3rem;
+                padding: 0.2rem 0.5rem;
+            }
+        }
+    }
+}
+
+// footer 
+footer {
+    padding: .8rem .3rem .1rem;
+    text-align: center;
+    background-color: #24272E;
+    p {
+        color: #F6F7FB;
     }
 }
