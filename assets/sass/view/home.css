@@ -23,8 +23,7 @@
   border-radius: 9px;
 }
 
-.about-us h2 + p, .our-classes .our-classes__paragraph, .our-trainer .our-trainer__paragraph {
-  font-size: 1.3rem;
+.our-classes .our-classes__paragraph, .our-trainer .our-trainer__paragraph {
   color: #8c8c8c;
   margin: 2rem 0;
 }
@@ -225,8 +224,8 @@ body {
 
 header {
   height: 100vh;
-  background: url(../../img/header.jpg) 30% 50%/cover;
-  opacity: .8;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url(../../img/header.jpg) 30% 50%/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../../img/header.jpg) 30% 50%/cover;
   position: relative;
 }
 
@@ -312,12 +311,12 @@ header .slogan .slogan__videos a span {
 }
 
 .about-us h2 + p {
+  margin: 2rem 0;
   color: #FF6C2C;
 }
 
 .about-us p {
   color: #DCDCDC;
-  font-size: 1.3rem;
 }
 
 .our-classes {
@@ -542,12 +541,11 @@ header .slogan .slogan__videos a span {
 }
 
 .contact-us {
-  padding: 0 1rem;
+  padding: 2rem 1rem;
   text-align: center;
   color: #fff;
-  height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url("../../img/contact-us.jpg") center/cover;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.6)), url("../../img/contact-us.jpg") center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.6)), url("../../img/contact-us.jpg") center/cover;
 }
 
 .contact-us .contact-us__title {
@@ -569,6 +567,10 @@ header .slogan .slogan__videos a span {
 .contact-us form select,
 .contact-us form textarea {
   background: transparent;
+}
+
+.contact-us form textarea {
+  resize: none;
 }
 
 .contact-us button {
