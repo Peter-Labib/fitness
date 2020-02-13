@@ -12,6 +12,10 @@ nav {
     padding: 0 1rem;
     transition: all ease-in-out 1s;
 
+    .navbar__brand {
+        text-align: center;
+        color: #FFF;
+    }
     .navbar__links {
         width: 80vw;
         // margin: 0;

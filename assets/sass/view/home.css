@@ -50,6 +50,11 @@ nav {
   transition: all ease-in-out 1s;
 }
 
+nav .navbar__brand {
+  text-align: center;
+  color: #FFF;
+}
+
 nav .navbar__links {
   width: 80vw;
   position: absolute;
@@ -637,6 +642,8 @@ header .slogan .slogan__videos a span {
 .contact-us form select,
 .contact-us form textarea {
   background: transparent;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
 }
 
 .contact-us form textarea {
