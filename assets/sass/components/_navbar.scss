@@ -9,6 +9,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 1rem;
+    transition: all ease-in-out 1s;
 
     .navbar__links {
         width: 80vw;
@@ -31,54 +33,110 @@ nav {
         }
     }
 
-
     .navbar__link a {
         vertical-align: middle;
         text-decoration: none;
         text-transform: capitalize;
         color: #FFFFFF;
         position: relative;
+        opacity: .7;
+        transition: all ease .4s;
 
-        &.active::after {
+        &::after {
             content: "";
             position: absolute;
+            border-radius: 4px;
             top: 1.8rem;
             left: 0;
-            width: 100%;
+            width: 0;
             height: .2rem;
+            z-index: 3;
             background-color: #FF1D6A;
+            transition: all ease .5s;
+        }
 
+        &.active,
+        &:hover {
+            opacity: 1;
+
+            &::after {
+                width: 100%;
+                height: .2rem;
+            }
         }
     }
 
 
     .navbar__button {
-        height: 75%;
-        width: 3rem;
-        position: relative;
         cursor: pointer;
 
-        span {
-            position: absolute;
-            right: 50%;
-            transform: translate(50%, 50%);
-            display: block;
-            height: .15rem;
+        div {
+            width: 25px;
+            height: 3px;
+            margin: 5px;
+            transition: all ease .8s;
             background-color: #FFFFFF;
-            width: 80%;
-            border-radius: 4px;
-            display: block;
-
-            &:first-of-type {
-                top: 30%;
-            }
 
             &:nth-of-type(2) {
-                top: 50%;
+                opacity: 1;
+            }
+        }
+
+        &.active {
+            div:first-of-type {
+                transform: rotate(-45deg) translate(-5px, 6px);
             }
 
-            &:last-of-type {
-                top: 70%
+            div:nth-of-type(2) {
+                opacity: 0;
+            }
+
+            div:last-of-type {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+    }
+}
+
+// desktop-media
+@media (min-width:1200px) {
+    nav {
+        justify-content: space-around;
+        padding: 0;
+
+        .navbar__links {
+            margin: 0;
+            width: 60%;
+            position: relative;
+            top: unset;
+            left: unset;
+            height: unset;
+            flex-direction: row;
+            background-color: transparent;
+            transform: translateX(0);
+
+            &::after {
+                content: "";
+                position: absolute;
+                border-radius: 4px;
+                top: 2.05rem;
+                left: 40px;
+                width: 95%;
+                height: .1rem;
+                background-color: rgba(191, 191, 191, 0.342);
+            }
+        }
+
+        .navbar__link a {
+            opacity: .7;
+            transition: all ease .4s;
+
+            &.active {
+                opacity: 1;
+            }
+
+            &.active::after {
+                opacity: 1;
             }
         }
     }

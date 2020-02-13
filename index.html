@@ -21,21 +21,21 @@
             <img src="assets/img/logo.png" alt="">
         </a>
         <ul class="navbar__links">
-            <li class="navbar__link"><a href="" class="active">home</a></li>
-            <li class="navbar__link"><a href="">about us</a></li>
-            <li class="navbar__link"><a href="">our classes</a></li>
-            <li class="navbar__link"><a href="">our trainer</a></li>
-            <li class="navbar__link"><a href="">testmonials</a></li>
-            <li class="navbar__link"><a href="">recent blog </a></li>
-            <li class="navbar__link"><a href="">contact us</a></li>
+            <li class="navbar__link"><a href="" class="active" data-scroll="header">home</a></li>
+            <li class="navbar__link"><a href="" data-scroll="aboutUs">about us</a></li>
+            <li class="navbar__link"><a href="" data-scroll="ourClasses">our classes</a></li>
+            <li class="navbar__link"><a href="" data-scroll="ourTrainer">our trainer</a></li>
+            <li class="navbar__link"><a href="" data-scroll="testmonials">testmonials</a></li>
+            <li class="navbar__link"><a href="" data-scroll="recentBlog">recent blog</a></li>
+            <li class="navbar__link"><a href="" data-scroll="contactUs">contact us</a></li>
         </ul>
-        <div class="navbar__button">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="navbar__button d-xl-none">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </nav>
-    <header>
+    <header id="header">
         <div class="slogan">
             <h2 class="h1">Don't Stop Till You Drop</h2>
             <p>The best way to <span>make sure your body and mind</span> are ready for work is to wake them up with a
@@ -51,20 +51,22 @@
     <div class="price-plans">
         <div class=" container-md">
             <h2 class="h1">price plans</h2>
-            <div class="price-plans__card">
+            <div class="row">
+            <div class="price-plans__card col-auto">
                 <img src="assets/img/Group 58.jpg" alt="body building class">
             </div>
-            <div class="price-plans__card">
+            <div class="price-plans__card col-auto">
                 <img src="assets/img/Group 59.jpg" alt="body building class">
             </div>
-            <div class="price-plans__card">
+            <div class="price-plans__card col-auto p-lg-4 p-xl-0">
                 <img src="assets/img/Group 60.jpg" alt="body building class">
             </div>
+        </div>
         </div>
     </div>
 
     <!-- about us -->
-    <div class="about-us">
+    <div class="about-us" id="aboutUs">
         <div class="container">
             <span>ABOUT</span>
             <h2 class="h1">Welcome to Us</h2>
@@ -82,7 +84,7 @@
     </div>
 
     <!-- our classes -->
-    <div class="our-classes">
+    <div class="our-classes" id="ourClasses">
         <div class="container">
             <h2 class="our-classes__heading">Our Clasess</h2>
             <p class="our-classes__paragraph">If you run a fitness gym, this is one slogan that can bring customers in.
@@ -99,8 +101,8 @@
             </div>
             <div class="our-classes__grid-item">
                 <img src="assets/img/woman-doing-exercise-gym_116124-203.jpg" alt="">
-                <div class="our-classes__grid-item__highlighted-box">
-                    <h2 class="h1">Advanced Gymnastic</h2>
+                <div class="our-classes__grid-item__highlighted-box rounded">
+                    <h5 class="our-classes__grid-item__highlighted-box__heading">Advanced Gymnastic</h5>
                     <p>If you run a fitness gym, this is one slogan that can bring customers in. No one likes having to
                         drive miles out of their way to go to the gym.</p>
                     <button class="btn rounded-pill">READ MORE</button>
@@ -127,7 +129,7 @@
     </div>
 
     <!-- our trainer -->
-    <div class="our-trainer">
+    <div class="our-trainer" id="ourTrainer">
         <div class="container">
             <h2 class="our-trainer__title h1">Our Trainer</h2>
             <p class="our-trainer__paragraph">If you run a fitness gym, this is one slogan that can bring customers in.
@@ -253,7 +255,7 @@
     </div>
 
     <!-- Testmonials -->
-    <div class="Testmonials">
+    <div class="Testmonials" id="testmonials">
         <h2 class="h1">Testmonials</h2>
         <div class="container">
             <div class="Testmonials__carousel owl-carousel owl-theme">
@@ -298,33 +300,39 @@
     </div>
 
     <!-- Recent Blog  -->
-    <div class="Recent-Blog">
+    <div class="Recent-Blog" id="recentBlog">
         <div class="container">
             <h2 class="h1 Recent-Blog__title">Recent Blog </h2>
             <div class="row mt-5">
                 <div class="Recent-Blog__cards col-12 col-lg-4 order-last order-lg-first">
-                    <div class="Recent-Blog__card card">
-                        <img src="assets/img/recent-blog/1.jpg" alt="" class="card-img-">
-                        <div class="card-body">
-                            <h5 class="card-title">This Harvard Student Ran 70 Miles Back to College</h5>
-                            <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis.</p>
+                    <div class="row justify-content-center flex-lg-column">
+                        <div class="col-12 col-sm-9 col-md-6 col-lg-11">
+                        <div class="Recent-Blog__card card">
+                            <img src="assets/img/recent-blog/1.jpg" alt="" class="card-img-">
+                            <div class="card-body">
+                                <h5 class="card-title">This Harvard Student Ran 70 Miles Back to College</h5>
+                                <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis.</p>
+                            </div>
+                            <div class="card-footer">
+                                <span><i class="fas fa-globe-americas"></i> Long Name Here</span>
+                                <span><i class="fas fa-clock"></i> 1h ago</span>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <span><i class="fas fa-globe-americas"></i> Long Name Here</span>
-                            <span><i class="fas fa-clock"></i> 1h ago</span>
                         </div>
-                    </div>
-                    <div class="Recent-Blog__card card">
-                        <img src="assets/img/recent-blog/2.jpg" alt="" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Female Boxers Describe What It’s Like to Take a Punch</h5>
-                            <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis.</p>
+                        <div class="col-12 col-sm-9 col-md-6 col-lg-11">
+                        <div class="Recent-Blog__card card">
+                            <img src="assets/img/recent-blog/2.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Female Boxers Describe What It’s Like to Take a Punch</h5>
+                                <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis.</p>
+                            </div>
+                            <div class="card-footer">
+                                <span><i class="fas fa-globe-americas"></i> Long Name Here</span>
+                                <span><i class="fas fa-clock"></i> 1h ago</span>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <span><i class="fas fa-globe-americas"></i> Long Name Here</span>
-                            <span><i class="fas fa-clock"></i> 1h ago</span>
                         </div>
                     </div>
                 </div>
@@ -359,15 +367,15 @@
     </div>
 
     <!-- contact us -->
-    <div class="contact-us">
+    <div class="contact-us" id="contactUs">
         <h2 class="contact-us__title h1">Contact Us</h2>
-
+        <div class="container">
         <form>
             <div class="form-row no-gutters">
-                <div class="col-12">
+                <div class="col-12 col-md-6">
                     <input type="email" class="form-control" placeholder="Email" dir="auto">
                 </div>
-                <div class="col-12">
+                <div class="col-12 col-md-6">
                     <select name="" id="" class="form-control">
                         <option value="" selected>subject</option>
                     </select>
@@ -378,6 +386,7 @@
                 </div>
             </div>
         </form>
+    </div>
         <button class="btn btn-danger" type="submit">submit</button>
         <p>Email@Example.Com<span> | </span>002-010-66269735</p>
         <div class="contact-us__icons">
