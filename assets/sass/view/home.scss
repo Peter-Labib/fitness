@@ -15,7 +15,7 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     background-color: $main-color;
-    
+
 }
 
 header {
@@ -47,6 +47,7 @@ header {
 
             a {
                 color: $secondry-color;
+                text-decoration: none;
 
                 span {
                     color: #fff;
@@ -141,30 +142,37 @@ header {
         grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
         justify-content: center;
 
-        .our-classes__grid-item {
+        .our-classes__grid-item,
+        .our-classes__grid-item-highlighted {
             position: relative;
+            cursor: pointer;
 
             img {
                 width: 100%;
             }
 
-            &>h3 {
+            .our-classes__grid-item__title-container {
                 position: absolute;
                 left: 0;
                 bottom: 0;
                 background-color: rgba($color: #13191A, $alpha: 0.58);
                 width: 100%;
-                padding: 2rem;
-                margin-bottom: 0;
-                color: #FFFFFF;
-                font-size: 1.3rem;
 
-                &::after {
-                    @extend %after-center;
-                    bottom: 1rem;
-                    background-color: $third-color;
+                h3 {
+
+                    padding: 2rem;
+                    margin-bottom: 0;
+                    color: #FFFFFF;
+                    font-size: 1.3rem;
+
+                    &::after {
+                        @extend %after-center;
+                        bottom: 1rem;
+                        background-color: $third-color;
+                    }
                 }
             }
+
 
             .our-classes__grid-item__highlighted-box {
                 position: absolute;
@@ -176,6 +184,7 @@ header {
                 height: 90%;
                 color: #F6F7FB;
                 opacity: .85;
+                z-index: 2;
 
                 .our-classes__grid-item__highlighted-box__heading {
                     margin: 2% .3% 3%;
@@ -251,8 +260,13 @@ header {
 
         .our-trainer__info__icon {
             margin-right: .5rem;
-            transition: all ease .2s;
+            transition: all ease .3s;
             color: $secondry-color;
+            opacity: .7;
+
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 
@@ -375,7 +389,7 @@ header {
 
 // contact-us
 .contact-us {
-    padding: 2rem 1rem;
+    padding: 2rem;
     text-align: center;
     color: #fff;
     // height: 100vh;
@@ -437,8 +451,21 @@ header {
     background-color: $main-color;
     color: #FFF;
 
+    .quick-contacts__logo {
+        text-align: center;
+        padding-bottom: 2rem;
+        img {
+            width: 80px;
+        }
+    }
+
     .quick-contacts__info {
         white-space: pre-line;
+
+        p svg {
+            color: $secondry-color;
+            margin-right: .5rem;
+        }
 
         ul {
             list-style: none;
@@ -451,6 +478,37 @@ header {
             }
         }
     }
+
+    .quick-contacts__tags {
+        .quick-contacts__tags__list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                margin: .3rem;
+                padding: .4rem;
+                border: 1px solid #979797;
+                transition: all ease .4s;
+                
+                a {
+                   color: #BBBBBB;
+                   text-decoration: none;
+                }
+
+                &:hover {
+                    background-color: $secondry-color;
+                    border-color: transparent;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    
 }
 
 // footer 
@@ -472,25 +530,29 @@ footer {
     }
 
     // our classes
-    .our-classes .our-classes__grid-container .our-classes__grid-item {
-        .our-classes__grid-item__highlighted-box {
-            .our-classes__grid-item__highlighted-box__heading {
-                font-size: 2rem;
-                margin: 2rem;
+    .our-classes .our-classes__grid-container {
 
-                &::after {
-                    bottom: -1rem;
+        .our-classes__grid-item,
+        .our-classes__grid-item-highlighted {
+            .our-classes__grid-item__highlighted-box {
+                .our-classes__grid-item__highlighted-box__heading {
+                    font-size: 2rem;
+                    margin: 2rem;
+
+                    &::after {
+                        bottom: -1rem;
+                    }
                 }
-            }
 
-            p {
-                font-size: 1.3rem;
-                margin-bottom: 1rem;
-                line-height: 1.7;
-            }
+                p {
+                    font-size: 1.3rem;
+                    margin-bottom: 1rem;
+                    line-height: 1.7;
+                }
 
-            button {
-                width: auto;
+                button {
+                    width: auto;
+                }
             }
         }
     }

@@ -1,0 +1,107 @@
+// header
+@media (min-width:1200px) {
+    header {
+        .slogan {
+            width: 35vw;
+            padding: 4rem;
+            padding-right: 5rem;
+
+            p {
+                margin: 2rem 0;
+            }
+
+            .slogan__videos {
+                button {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    // price plan
+    .price-plans {
+        padding-top: 0;
+
+        .container-md .row {
+            transform: translateY(-30%);
+            background-color: #181A1F;
+            margin: 0;
+
+            .price-plans__card:first-of-type {
+                padding-left: 0;
+            }
+
+            .price-plans__card:last-of-type {
+                padding-right: 0;
+            }
+
+            .price-plans__card {
+                transition: all ease .3s;
+                opacity: .8;
+
+                &:hover {
+                    transform: scale(1.1);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    //  our classes
+    .our-classes .our-classes__grid-container {
+        .our-classes__grid-item {
+            overflow: hidden;
+
+            .our-classes__grid-item__title-container {
+                transition: all ease-in-out .5s;
+            }
+
+            .our-classes__grid-item__highlighted-box {
+                transition: all ease-in-out .5s;
+                transform: translate(-50%, -50%) scale(0);
+            }
+
+            &:hover {
+                .our-classes__grid-item__title-container {
+                    transform: translateY(100%);
+                }
+
+                .our-classes__grid-item__highlighted-box {
+                    transform: translate(-50%, -50%) scale(1);
+                    box-shadow: 0 0 25px 6px #181A1F;
+                }
+            }
+        }
+    }
+
+    // Testmonials
+    .Testmonials {
+        .container {
+            width: 40%;
+
+            .Testmonials__carousel__item {
+                .Testmonials__carousel__item__rate {
+                    margin: 3rem 0 2.3rem;
+                }
+            }
+        }
+    }
+
+    // contact us
+    .contact-us {
+        padding: 3rem 0;
+        /* input, textarea, select {
+            // padding:1.5rem;
+
+        } */
+
+        button {
+            margin: 1.5rem 0 2rem;
+            width: 10%;
+        }
+
+        p span {
+            padding: 0 1.3rem;
+        }
+    }
+}

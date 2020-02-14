@@ -9,7 +9,7 @@
     border-radius: 9px;
 }
 
-%after-center{
+%after-center {
     content: "";
     position: absolute;
     left: 50%;
@@ -25,4 +25,18 @@
     // font-size: 1.3rem;
     color: #8c8c8c;
     margin: 2rem 0;
+}
+
+// carousel 
+%owl-item {
+    transform: scale(.7);
+    box-shadow: $third-color 0 3px 8px -2px;
+    border: 1px solid rgba($color: $third-color, $alpha: .3);
+    transition: all ease .4s;
+}
+
+%owl-item-active {
+    transform: scale(.9);
+        box-shadow: $third-color -4px -6px 19px -4px;
+        border: 1px solid rgba($color: $third-color, $alpha: .5);
 }

@@ -1,0 +1,82 @@
+@media (min-width: 1200px) {
+  header .slogan {
+    width: 35vw;
+    padding: 4rem;
+    padding-right: 5rem;
+  }
+  header .slogan p {
+    margin: 2rem 0;
+  }
+  header .slogan .slogan__videos button {
+    margin-right: 1rem;
+  }
+  .price-plans {
+    padding-top: 0;
+  }
+  .price-plans .container-md .row {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+    background-color: #181A1F;
+    margin: 0;
+  }
+  .price-plans .container-md .row .price-plans__card:first-of-type {
+    padding-left: 0;
+  }
+  .price-plans .container-md .row .price-plans__card:last-of-type {
+    padding-right: 0;
+  }
+  .price-plans .container-md .row .price-plans__card {
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+    opacity: .8;
+  }
+  .price-plans .container-md .row .price-plans__card:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 1;
+  }
+  .our-classes .our-classes__grid-container .our-classes__grid-item {
+    overflow: hidden;
+  }
+  .our-classes .our-classes__grid-container .our-classes__grid-item .our-classes__grid-item__title-container {
+    -webkit-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
+  }
+  .our-classes .our-classes__grid-container .our-classes__grid-item .our-classes__grid-item__highlighted-box {
+    -webkit-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
+  .our-classes .our-classes__grid-container .our-classes__grid-item:hover .our-classes__grid-item__title-container {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  .our-classes .our-classes__grid-container .our-classes__grid-item:hover .our-classes__grid-item__highlighted-box {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-box-shadow: 0 0 25px 6px #181A1F;
+            box-shadow: 0 0 25px 6px #181A1F;
+  }
+  .Testmonials .container {
+    width: 40%;
+  }
+  .Testmonials .container .Testmonials__carousel__item .Testmonials__carousel__item__rate {
+    margin: 3rem 0 2.3rem;
+  }
+  .contact-us {
+    padding: 3rem 0;
+    /* input, textarea, select {
+            // padding:1.5rem;
+
+        } */
+  }
+  .contact-us button {
+    margin: 1.5rem 0 2rem;
+    width: 10%;
+  }
+  .contact-us p span {
+    padding: 0 1.3rem;
+  }
+}
+/*# sourceMappingURL=home-descktop.css.map */
