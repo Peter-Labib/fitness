@@ -30,7 +30,7 @@ $('.owl-carousel.our-trainer__second-carousel').owlCarousel({
 
 $('.Testmonials__carousel.owl-carousel').owlCarousel({
 	center: true,
-	// items: 1,
+	items: 1,
 	loop: true,
 	animateOut: 'fadeOut',
 	autoplayTimeout: 10000,
