@@ -4,6 +4,8 @@ $('.owl-carousel.our-trainer__pic').owlCarousel({
 	items: 2,
 	loop: true,
 	nav: true,
+	mouseDrag:false,
+	touchDrag:false,
 	navText: ['<i class="fas fa-chevron-circle-left fa-2x"></i>', '<i class="fas fa-chevron-circle-right fa-2x"></i>'],
 	margin: 10,
 	responsive: {
@@ -19,8 +21,6 @@ $('.owl-carousel.our-trainer__second-carousel').owlCarousel({
 	loop: true,
 	nav: true,
 	navText: ['<i class="fas fa-chevron-circle-left fa-2x"></i>', '<i class="fas fa-chevron-circle-right fa-2x"></i>'],
-	mouseDrag:false,
-	touchDrag:false,
 	responsive: {
 		600: {
 			items: 5
