@@ -307,6 +307,23 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #181A1F;
+  overflow: hidden;
+}
+
+.loading-spinner {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #290908;
+  z-index: 400;
+}
+
+.loading-spinner img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 header {
@@ -646,7 +663,6 @@ header .slogan .slogan__videos a span {
 }
 
 .contact-us {
-  padding: 2rem;
   text-align: center;
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url("../../img/contact-us.jpg") center/cover;
