@@ -19,7 +19,8 @@ $('.owl-carousel.our-trainer__second-carousel').owlCarousel({
 	loop: true,
 	nav: true,
 	navText: ['<i class="fas fa-chevron-circle-left fa-2x"></i>', '<i class="fas fa-chevron-circle-right fa-2x"></i>'],
-	// margin: 10,
+	mouseDrag:false,
+	touchDrag:false,
 	responsive: {
 		600: {
 			items: 5

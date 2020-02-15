@@ -1,7 +1,9 @@
 class OurTrainerSlider {
 	constructor() {
 		this.prevBtn = document.querySelector('.our-trainer__pic .owl-prev');
+		this.nextBtn = document.querySelector('.our-trainer__pic .owl-next');
 		this.prevBtn.addEventListener('click',this.ourTrainerInfoHandler);
+		this.nextBtn.addEventListener('click',this.ourTrainerInfoHandler);
 	}
 
 	ourTrainerInfoHandler() {    

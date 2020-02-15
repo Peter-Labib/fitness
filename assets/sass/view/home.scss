@@ -15,7 +15,6 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     background-color: $main-color;
-
 }
 
 header {
@@ -61,8 +60,6 @@ header {
 .price-plans {
     padding: 2rem 0;
     background-color: $main-color;
-
-
 
     h2 {
         color: #FFFFFF;
@@ -173,7 +170,6 @@ header {
                 }
             }
 
-
             .our-classes__grid-item__highlighted-box {
                 position: absolute;
                 left: 50%;
@@ -211,7 +207,6 @@ header {
                 }
             }
         }
-
     }
 }
 
@@ -392,7 +387,6 @@ header {
     padding: 2rem;
     text-align: center;
     color: #fff;
-    // height: 100vh;
     background: linear-gradient(rgba(black, .8)80%, rgba(black, .6)), url("../../img/contact-us.jpg") center/cover;
 
     .contact-us__title {
@@ -454,6 +448,7 @@ header {
     .quick-contacts__logo {
         text-align: center;
         padding-bottom: 2rem;
+
         img {
             width: 80px;
         }
@@ -490,10 +485,10 @@ header {
                 padding: .4rem;
                 border: 1px solid #979797;
                 transition: all ease .4s;
-                
+
                 a {
-                   color: #BBBBBB;
-                   text-decoration: none;
+                    color: #BBBBBB;
+                    text-decoration: none;
                 }
 
                 &:hover {
@@ -507,8 +502,6 @@ header {
             }
         }
     }
-
-    
 }
 
 // footer 
