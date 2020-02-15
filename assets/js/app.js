@@ -45,3 +45,5 @@ $('.Testmonials__carousel.owl-carousel').owlCarousel({
 		}
 	}
 });
+
+new WOW().init();

@@ -58,6 +58,9 @@
     -webkit-box-shadow: 0 0 25px 6px #181A1F;
             box-shadow: 0 0 25px 6px #181A1F;
   }
+  .our-trainer .our-trainer__data {
+    position: relative;
+  }
   .Testmonials .container {
     width: 40%;
   }
