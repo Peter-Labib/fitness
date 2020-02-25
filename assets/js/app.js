@@ -19,6 +19,8 @@ $('.owl-carousel.our-trainer__second-carousel').owlCarousel({
 	center: true,
 	// items: 2,
 	loop: true,
+	autoplayTimeout: 10000,
+	autoplay:true,
 	nav: true,
 	navText: ['<i class="fas fa-chevron-circle-left fa-2x"></i>', '<i class="fas fa-chevron-circle-right fa-2x"></i>'],
 	responsive: {
